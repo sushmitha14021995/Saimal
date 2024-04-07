@@ -1,0 +1,10 @@
+<p>Saimal Shopping Site</p>
+
+<% if current_user %>
+  <h1>Welcome, <%= current_user.name %></h1>
+  <%=link_to 'Add Product', new_product_path %>
+  <%=link_to 'show Product', products_path %>
+<% else %>
+  <h1>This is the index page</h1>
+  <%= link_to 'Login', login_path %><br>
+<% end %>
