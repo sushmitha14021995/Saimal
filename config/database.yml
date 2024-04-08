@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: saimal_production
-  username: saimal
-  password: <%= ENV["SAIMAL_DATABASE_PASSWORD"] %>
+  username: root
+  password: 123
